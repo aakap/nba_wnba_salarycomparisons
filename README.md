@@ -1,8 +1,5 @@
-# nba_wnba_salarycomparisons
-
 # Examining Gender-Driven Salary Gaps in Professional Basketball
 
-# Overview
  
 # Data Source
 [Zip File of Initial Data Files]() | [Website]()
