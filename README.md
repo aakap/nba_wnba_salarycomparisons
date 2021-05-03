@@ -23,8 +23,11 @@ Figure 2. Salary vs Games Played for WNBA
 ![alt text](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/womens_salaryvgames.png)
 
 Multivariate Regression Results:
-WNBA salary = 
-NBA salary = 
+NBA salary = -56900*games played + 9609*rebounds + 10220*points + 30600*assists
+R^2 = 0.686
+
+WNBA salary = 3533*games played + 37*rebounds + 14.7*points + 545.8*assists
+R^2 = 0.774
 
 # Principle Component Analysis
 
