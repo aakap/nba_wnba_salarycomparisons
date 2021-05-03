@@ -26,8 +26,10 @@ Multivariate Regression Results:
 NBA salary = -56900*games played + 9609*rebounds + 10220*points + 30600*assists
 R^2 = 0.686
 
-WNBA salary = 3533*games played + 37*rebounds + 14.7*points + 545.8*assists
+WNBA salary = 3533*games played + 37 *rebounds + 14.7*points + 545.8 *assists
 R^2 = 0.774
+
+From these results, it is immediately clear that the men's salaries are significantly higher than the women's salaries just by looking at the units of the axes, regardless of games played. The regression visualized in Figure 1 has an R^2 of 0.46 whereas the R^2 of the regression in Figure 2 is 0.75. Thus, the WNBA has a stronger linear relationship between salary and games played. We can see that there are fewer outliers of women having high salaries with few games played comparatively as there are several men's players who played few games but have similar salaries to those who played 60 games. This may be due to injuries that prevented players from getting court-time after their salaries and contracts were negotiated. It is also important to note that there are far fewer games played in the WNBA than in the NBA, which may account for some difference in salary. Based on the multivariate regression results, all performance metrics positively influence salary as expected, except for the number of games played for men's teams. This is likely a discrepancy and could be caused by the unexpected injuries as aforementioned. Games played has the largest impact on salary for women's teams. Overall, the data shows a stronger linear fit for predicting slaary based on performance metrics for WNBA compared to the NBA, which may suggest that external factors such as sponsorships and player "hype" are contributors to salary for men's basketball.
 
 # Principle Component Analysis
 
