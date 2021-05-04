@@ -99,4 +99,5 @@ We then used these weights to determine an overall projected player value score 
 
 ![alt text](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/Actual%20Player%20Salary%20vs.%20Projected%20Player%20Value%20Differentiated%20by%20League.PNG)
 *Note*: For the HTML version of this visual, which labels each dot with coordinate info and the player that it corresponds to, download and view this [file](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/actual-player-salary-versus-projected-player-value-differentiated-by-league).
+
 This graph makes it very clear that NBA players and WNBA players who have extremely comparable player performance and projected player value scores make vastly different salaries due to the pay gap. For any given x-axis value (projected player value score), the red dots are significantly below the blue dots when it comes to the y-axis (actual salary). There is no merit to any conception that there is a player-performance driven reason for WNBA players to be underpaid relatively to NBA players.
