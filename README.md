@@ -32,7 +32,7 @@ R^2 = 0.774
 From these results, it is immediately clear that the men's salaries are significantly higher than the women's salaries just by looking at the units of the axes, regardless of games played. The regression visualized in Figure 1 has an R^2 of 0.46 whereas the R^2 of the regression in Figure 2 is 0.75. Thus, the WNBA has a stronger linear relationship between salary and games played. We can see that there are fewer outliers of women having high salaries with few games played comparatively as there are several men's players who played few games but have similar salaries to those who played 60 games. This may be due to injuries that prevented players from getting court-time after their salaries and contracts were negotiated. It is also important to note that there are far fewer games played in the WNBA than in the NBA, which may account for some difference in salary. Based on the multivariate regression results, all performance metrics positively influence salary as expected, except for the number of games played for men's teams. This is likely a discrepancy and could be caused by the unexpected injuries as aforementioned. Games played has the largest impact on salary for women's teams. Overall, the data shows a stronger linear fit for predicting slaary based on performance metrics for WNBA compared to the NBA, which may suggest that external factors such as sponsorships and player "hype" are contributors to salary for men's basketball.
 
 # Principle Component Analysis
-To build a preliminary model for basketball player salaries, we performed a principal component analysis (PCA) using salary as the target variable and minutes played per game, points scored per minute, assists per minute, and rebounds per minute as input variables. This PCA was performed separately on a WNBA data set and a NBA data set. The weights were mildly different but comparable and were as follows:
+To build a preliminary model for basketball player salaries, we performed a principal component analysis (PCA) using salary as the target variable and minutes played per game, points scored per minute, assists per minute, and rebounds per minute as input variables (all standardized as z-scores). This PCA was performed separately on a WNBA data set and a NBA data set. The weights were mildly different but comparable and were as follows:
 
 WNBA weights...
 Minutes played per game*: 0.52000132
@@ -48,4 +48,53 @@ Rebounds per minute: 0.10062772
 
 `*WNBA games are 40 minutes in length and NBA games are 48 minutes in length. To prevent this difference from skewing the PCA model, WNBA minutes figures were multiplied by 48/40 = 1.2
 
-We see that minutes played per game is slightly more influential in our projection for salary in the WNBA than it is for the NBA whereas assists per minute and rebounds per minute are slighly more influential in our projection for salary in the NBA than for the WNBA. However, it is noteworthy that the weights are quite similar for both leagues, suggesting that players with similar performance metrics in each league should have comparable salaries using this model.
+We see that minutes played per game is slightly more influential in our projection for value in the WNBA than it is for the NBA whereas assists per minute and rebounds per minute are slighly more influential in our projection for value in the NBA than for the WNBA. However, it is noteworthy that the weights are quite similar for both leagues, suggesting that players with similar performance metrics in each league offer comparable value and should have comparable salaries using this model.
+
+Models are invaluable in that they aren't as susceptible to human biases and perceptions, but it is useful to check the model results to see if they seem even remotely reasonable. As a quick eye check, it is good to see who the PCA model ranks as the top-10 players in each league. The purpose of the PCA is not to make a judgement on who the best players in the league are, but it is important to verify that players widely regarded as elite and at the top of each league are in the top-tier of the model. The top fifteen players in each league are as follows:
+
+WNBA...
+1. Arike Ogunbowale
+1. Courtney Vandersloot
+1. Breanna Stewart
+1. DeWanna Bonner
+1. A'ja Wilson
+1. Diana Taurasi
+1. Alyssa Thomas
+1. Sabrina Ionescu
+1. Napheesa Collier
+1. Candace Parker
+1. Brittney Griner
+1. Betnijah Laney
+1. Skylar Diggins-Smith
+1. Myisha Hines-Allen
+1. Kelsey Mitchell
+
+NBA...
+1. Luka Doncic
+1. James Harden
+1. Nikola Jokic
+1. Giannis Antetokounmpo
+1. Russell Westbrook
+1. Stephen Curry
+1. Damian Lillard
+1. Trae Young
+1. LeBron James
+1. Joel Embiid
+1. Bradley Beal
+1. Kevin Durant
+1. Julius Randle
+1. Kyrie Irving
+1. Zach LaVine
+
+These lists both pass the eye test and would be considered to be quite reasonable in the judgement of most fans.
+
+Now that we have proof-of-concept for the PCA model, it's time to use the model to explore the discrepancy of salaries of players of comparable value in the PCA model based on league. It was important to build the PCA model separately for each league because actual salary figures vary severely by league and the model would fail to accurately model salary in either league if both were done together (instead getting stuck in the middle). However, as a means of evaluating both WNBA and NBA players all together, we averaged each weight from the two individual PCA models together to form an overall, non-league-specific set of weights. These weights are as follows: 
+
+Minutes per Game: 0.5028422613056367
+Points per Game: 0.271784794225057
+Assists per Game: 0.1354994985248121
+Rebounds per Game: 0.0898344594449426
+
+We then used these weights to determine an overall projected player value score for every WNBA and NBA player. This projected player value score was then compared to players' actual salaries. WNBA players are plotted in blue and NBA players are plotted in red.
+
+![alt text](
