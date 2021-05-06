@@ -89,7 +89,7 @@ NBA...
 1. Kyrie Irving
 1. Zach LaVine
 
-These lists both pass the eye test and would be considered to be quite reasonable in the judgement of most fans.
+These lists both pass the eye test and would be considered to be quite reasonable in the judgement of most fans. As a more tangible source of validation, Google's top professional athlete listings upon googling "best wnba players" and "best nba players" results in 10 of our top 15 WNBA players and 12 of our 15 top NBA players appearing on the list.
 
 Now that we have proof-of-concept for the PCA model, it's time to use the model to explore the discrepancy of salaries of players of comparable value in the PCA model based on league. It was important to build the PCA model separately for each league because actual salary figures vary severely by league and the model would fail to accurately model salary in either league if both were done together (instead getting stuck in the middle). However, as a means of evaluating both WNBA and NBA players all together, we averaged each weight from the two individual PCA models together to form an overall, non-league-specific set of weights. These weights are as follows: 
 
