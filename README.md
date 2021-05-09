@@ -10,9 +10,12 @@ There is a striking difference in pay between men’s and women’s basketball. 
 
 # Data Sources
 ## Raw Data Sources:
-[WNBA Player Performance Stats (Website)](https://www.rotowire.com/wnba/stats.php) | [WNBA Player Performance Stats (CSV)] (https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/wnba-player-performance-stats.csv)
+[WNBA Player Performance Stats (Website)](https://www.rotowire.com/wnba/stats.php) | [WNBA Player Performance Stats (CSV)](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/wnba-player-performance-stats.csv)
+
 [WNBA Player Salary Stats (Website)](https://www.spotrac.com/wnba/rankings/2020/cap-hit/) | [WNBA Player Salary Stats (CSV)](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/wnba-salary-stats.csv)
+
 [NBA Player Performance Stats (Website)](https://www.nba.com/stats/leaders/?Season=2020-21&SeasonType=Regular%20Season&PerMode=Totals) | [NBA Player Performance Stats (CSV)](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/nba-player-performance-stats.csv)
+
 [NBA Player Salary Stats (Website)](https://www.basketball-reference.com/contracts/players.html) | [NBA Player Salary Stats](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/nba-salary-stats.csv)
 
 ## Manipulated Data Files:
