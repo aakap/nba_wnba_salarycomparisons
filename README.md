@@ -20,7 +20,9 @@ There is a striking difference in pay between men’s and women’s basketball. 
 
 ## Manipulated Data Files:
 [WNBA Player Performance Stats with Salaries](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/wnba-player-and-salary-stats-2020.csv)
+
 [NBA Player Performance Stats with Salaries](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/mnba-player-and-salary-stats-2020.csv)
+
 [Excel file used to produce these two data sets](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/wnba-nba-player-performance-and-salary-stats.xlsx)
 
 # Background 
