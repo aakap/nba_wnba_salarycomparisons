@@ -16,7 +16,7 @@ There is a striking difference in pay between men’s and women’s basketball. 
 
 [NBA Player Performance Stats (Website)](https://www.nba.com/stats/leaders/?Season=2020-21&SeasonType=Regular%20Season&PerMode=Totals) | [NBA Player Performance Stats (CSV)](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/nba-player-performance-stats.csv)
 
-[NBA Player Salary Stats (Website)](https://www.basketball-reference.com/contracts/players.html) | [NBA Player Salary Stats](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/nba-salary-stats.csv)
+[NBA Player Salary Stats (Website)](https://www.basketball-reference.com/contracts/players.html) | [NBA Player Salary Stats (CSV)](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/nba-salary-stats.csv)
 
 ## Manipulated Data Files:
 [WNBA Player Performance Stats with Salaries](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/wnba-player-and-salary-stats-2020.csv)
@@ -113,6 +113,5 @@ Figure 4: Pay Gap by Projected Value Tier
 
 NBA players whose projected value is in the 50th percentile or lower make an average of between 2,000% and 5,500% of the salaries of WNBA players in the same boat. Even more pronoucned, NBA stars make nearly 18,000% of the salary of similarly performing WNBA stars. To put this in a more anecdotal perspective, WNBA star Brittney Griner and NBA star John Wall have nearly identical projected value scores (1.15 and 1.18) yet John Wall makes $41,300,000 million per year while Griner makes $215,000 per year.
 The last player on the bench on an NBA team makes nearly four times that of the highest paid players in the WNBA. The WNBA and NBA exhibit an undeniable pay gap across the board; this pay gap is especially pronounced when it comes to the stars of each league.
-
 
 
