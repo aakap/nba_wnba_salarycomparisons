@@ -62,10 +62,10 @@ We see that minutes played per game is slightly more influential in our projecti
 
 Models are invaluable in that they aren't as susceptible to human biases and perceptions, but it is useful to check the model results to see if they seem even remotely reasonable. As a quick eye check, it is good to see who the PCA model ranks as the top-10 players in each league. The purpose of the PCA is not to make a judgement on who the best players in the league are, but it is important to verify that players widely regarded as elite and at the top of each league are in the top-tier of the model. The top fifteen players in each league are as follows:
 
-Figure 3a: Top WNBA Players by PCA Model
+Figure 3a: Top 15 WNBA Players by PCA Model
 ![alt text](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/PCA%20Top%20WNBA%20Players.png)
 
-Figure 3b: Top NBA Players by PCA Model
+Figure 3b: Top 15 NBA Players by PCA Model
 ![alt text](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/PCA%20Top%20NBA%20Players.png)
 
 These lists both pass the eye test and would be considered to be quite reasonable in the judgement of most fans. As a more tangible source of validation, Google's top professional athlete listings upon googling "best wnba players" and "best nba players" results in 10 of our top 15 WNBA players and 12 of our 15 top NBA players appearing on the list.
@@ -77,11 +77,27 @@ Points per Game: 0.271784794225057
 Assists per Game: 0.1354994985248121
 Rebounds per Game: 0.0898344594449426
 
-We then used these weights to determine an overall projected player value score for every WNBA and NBA player. This projected player value score was then compared to players' actual salaries. WNBA players are plotted in blue and NBA players are plotted in red.
+We then used these weights to determine an overall projected player value score for every WNBA and NBA player by averaging the WNBA and NBA weights for each variable, resulting in the following overall weights giving us a projected player value score:
+
+Minutes per Game: 0.50
+Points per Game: 0.27
+Assists per Game: 0.14
+Rebounds per Game: 0.09
+
+This projected player value score was then compared to players' actual salaries. WNBA players are plotted in blue and NBA players are plotted in red.
 
 ![alt text](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/Actual%20Player%20Salary%20vs.%20Projected%20Player%20Value%20Differentiated%20by%20League.PNG)
 *Note*: For the HTML version of this visual, which labels each dot with coordinate info and the player that it corresponds to, download and view this [file](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/actual-player-salary-versus-projected-player-value-differentiated-by-league).
 
 This graph makes it very clear that NBA players and WNBA players who have extremely comparable player performance and projected player value scores make vastly different salaries due to the pay gap. For any given x-axis value (projected player value score), the red dots are significantly below the blue dots when it comes to the y-axis (actual salary). There is no merit to any conception that there is a player-performance driven reason for WNBA players to be underpaid relative to NBA players.
 
-However, stopping at the point of identifying that WNBA players are underpaid relative to comparable NBA players would not do the problem justice. 
+However, stopping at the point of identifying that WNBA players are underpaid relative to comparable NBA players would not do the problem justice. In particular, the pay gap between comparable WNBA and NBA athletes from a percentage perspective increases with the star status of the player.
+
+Figure 4: Pay Gap by Projected Value Tier
+![alt text](https://github.com/aakap/nba_wnba_salarycomparisons/blob/main/PCA%20Pay%20Gap%20by%20Projected%20Value%20Tier.png)
+
+NBA players whose projected value is in the 50th percentile or lower make an average of between 2,000% and 5,500% of the salaries of WNBA players in the same boat. Even more pronoucned, NBA stars make nearly 18,000% of the salary of similarly performing WNBA stars. To put this in a more anecdotal perspective, WNBA star Brittney Griner and NBA star John Wall have nearly identical projected value scores (1.15 and 1.18) yet John Wall makes $41,300,000 million per year while Griner makes $215,000 per year.
+The last player on the bench on an NBA team makes nearly four times that of the highest paid players in the WNBA. The WNBA and NBA exhibit an undeniable pay gap across the board; this pay gap is especially pronounced when it comes to the stars of each league.
+
+
+
